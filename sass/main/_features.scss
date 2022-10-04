@@ -1,0 +1,41 @@
+.features {
+  @extend %section;
+}
+.container-features {
+  @extend %container;
+}
+.features__list {
+  @extend %list;
+
+  display: flex;
+}
+.features__item {
+  width: calc((100% - 90px) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.features__wraper-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $bg-color-team;
+  border-radius: 4px;
+}
+.features__titel {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $titel-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features__text {
+  margin: 0;
+}
