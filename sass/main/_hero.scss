@@ -1,33 +1,65 @@
 .hero {
   display: block;
-  max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
+  max-width: 576px;
+  height: 400px;
 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 
-  background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-    url(../images/herobg.jpg);
-    background-position: center;
-    background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/hero-bg/hero-mobail.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/hero-bg/hero-mpbail@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 1020px;
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/hero-bg/hero-desctop.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/hero-bg/hero-desctop@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url(../images/hero-bg/hero.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/hero-bg/hero@2x.jpg);
+    }
+  }
 }
 .hero__titel {
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 700px;
+  max-width: 360px;
 
   color: $white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 700px;
+  }
 }
 .button {
-  padding: 10px 32px;
+  padding: 10px 24px;
+  min-width: 200px;
 
   transition: background-color 250ms $cubic;
 
@@ -43,7 +75,12 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  &:hover, &:focus {
+  text-align: center;
+  &:hover,
+  &:focus {
     background-color: $button-acent-color;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
   }
 }

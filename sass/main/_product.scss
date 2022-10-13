@@ -1,9 +1,11 @@
-.product {
+.productp {
   padding-bottom: 93px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
-.container-product {
-  @extend %container;
-}
+
 .product__titel {
   margin-top: 0;
   margin-bottom: 50px;
@@ -15,8 +17,6 @@
   text-align: center;
 }
 .product__list {
-  @extend %list;
-
   display: flex;
 }
 .product__item {

@@ -1,12 +1,15 @@
 .header {
-    border-bottom: 1px solid $border-header-color;
+  border-bottom: 1px solid $border-header-color;
 }
-.container-header {
-  @extend %container;
-
+.head {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 15px;
+  }
 }
 .nav-page {
   display: flex;
@@ -23,18 +26,27 @@
   &__right {
     color: $bleack-color;
     &--revers {
-      color: $white-color
+      color: $white-color;
     }
   }
 }
-.nav-page__list {
-  @extend %list;
-  display: flex;
+.content-nav {
+  display: none;
 
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    margin-left: 90px;
+  }
+}
+.nav-page__list {
+  display: flex;
 }
 .nav-page__item:not(:last-child) {
-  margin-right: 53px;
+  margin-right: 50px;
 }
 .nav-page__link {
   @extend %link;
@@ -49,7 +61,8 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -69,8 +82,10 @@
   }
 }
 .contacts {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .contacts__link {
   @extend %link;
@@ -85,14 +100,35 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
     fill: $accent-color;
+  }
+  @media screen and (max-width: 1199px) {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .contacts__icon {
   margin-right: 10px;
 }
+
+.btn-menu {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+@import './mobail-menu';

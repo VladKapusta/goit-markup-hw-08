@@ -1,29 +1,31 @@
-.clients {
-  @extend %section;
-}
-.container-clients {
-  @extend %container;
-}
-
 .clients__titel {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $titel-color;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .clients__list {
-  @extend %list;
-
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .clients__item {
-  width: calc((100% - 150px) / 6);
-  &:not(:last-child) {
-    margin-right: 30px;
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
   }
 }
 .clients__link {

@@ -1,31 +1,44 @@
 .filter {
-    @extend %list;
-    
-    display: flex;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 330px;
+    gap: 15px 8px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
-  .filter__item:not(:last-child) {
-    margin-right: 8px;
-  }
-  .filter__button {
-    padding: 6px 22px;
-  
-    transition: background-color 250ms $cubic, box-shadow 250ms $cubic, color 250ms $cubic;
-  
-    background-color: $bg-filter-button;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    &:hover,
-    &:focus {
-      box-shadow: $box-shadow-filter-button;
-      background-color: $accent-color;
-      color: $white-color;
+}
+.filter__item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
     }
   }
-  
+}
+.filter__button {
+  padding: 6px 22px;
+
+  transition: background-color 250ms $cubic, box-shadow 250ms $cubic, color 250ms $cubic;
+
+  background-color: $bg-filter-button;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow-filter-button;
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
