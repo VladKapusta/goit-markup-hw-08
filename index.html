@@ -39,12 +39,12 @@
                         +38 096 111 11 11</a>
                 </div>
             </div>
-            <button type="button" class="btn-menu" aria-expanded="false" aria-controls="mobail-menu" data-mobail-open>
+            <button type="button" class="btn-menu js-open-menu" aria-expanded="false" aria-controls="mobail-menu">
                 <svg width="24" height="16" aria-label="Кнопка відкриття мобільного меню">
                     <use href="./images/svg.sprite.svg#icon-menu"></use>
                 </svg>
             </button>
-            <div class="mobail-menu" id="mobail-menu" data-mobail>
+            <div class="mobail-menu js-menu-container" id="mobail-menu">
                 <ul class="mobail-menu__list list">
                     <li class="mobail-menu__item"><a href="./index.html"
                             class="mobail-menu__link mobail-menu__link--current">Студія</a></li>
@@ -67,7 +67,7 @@
                         <li class="mobail-sotial__item"><a href="" class="mobail-sotial__link">Facebooc</a></li>
                         <li class="mobail-sotial__item"><a href="" class="mobail-sotial__link">LincedIn</a></li>
                     </ul>
-                    <button class="mobail-menu__close" data-mobail-close>
+                    <button class="mobail-menu__close js-close-menu">
                         <svg width="18" height="18">
                             <use href="./images/svg.sprite.svg#icon-close"></use>
                         </svg>
@@ -163,7 +163,7 @@
                     <li class="card-set__item">
                         <img srcset="./images/team/product.jpg 270w, ./images/team/product@2x.jpg 540w, ./images/team/product@3x.jpg 810w"
                             sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                            src="./images/team/product.jpg" alt="Ігор Дем'яненко" width="270">
+                            src="./images/team/product.jpg" alt="Ігор Дем'яненко">
                         <h3 class="card-set__titel">Ігор Дем'яненко</h3>
                         <p class="card-set__position">Product Designer</p>
                         <ul class="sotial__list list">
@@ -200,7 +200,7 @@
                     <li class="card-set__item">
                         <img srcset="./images/team/front.jpg 270w, ./images/team/front@2x.jpg 540w, ./images/team/front@3x.jpg 810w"
                             sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                            src="./images/team/product.jpg" alt="Ольга Рєпіна" width="270">
+                            src="./images/team/product.jpg" alt="Ольга Рєпіна">
                         <h3 class="card-set__titel">Ольга Рєпіна</h3>
                         <p class="card-set__position">Frontend Developer</p>
                         <ul class="sotial__list list">
@@ -237,7 +237,7 @@
                     <li class="card-set__item">
                         <img srcset="./images/team/market.jpg 270w, ./images/team/market@2x.jpg 540w, ./images/team/market@3x.jpg 810w"
                             sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                            src="./images/team/product.jpg" alt="Микола Тарасов" width="270">
+                            src="./images/team/product.jpg" alt="Микола Тарасов">
                         <h3 class="card-set__titel">Микола Тарасов</h3>
                         <p class="card-set__position">Marketing</p>
                         <ul class="sotial__list list">
@@ -274,7 +274,7 @@
                     <li class="card-set__item">
                         <img srcset="./images/team/designer.jpg 270w, ./images/team/designer@2x.jpg 540w, ./images/team/designer@3x.jpg 810w"
                             sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                            src="./images/team/product.jpg" alt="Михайло Єрмаков" width="270">
+                            src="./images/team/product.jpg" alt="Михайло Єрмаков">
                         <h3 class="card-set__titel">Михайло Єрмаков</h3>
                         <p class="card-set__position">UI Designer</p>
                         <ul class="sotial__list list">
@@ -472,6 +472,13 @@
             </form>
         </div>
     </div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+    <script src="./js/mobail-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

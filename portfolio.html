@@ -20,9 +20,9 @@
             <div class="content-nav">
                 <nav class="nav-page">
                     <ul class="nav-page__list list">
-                        <li class="nav-page__item"><a href="./index.html"
-                                class="nav-page__link">Студія</a></li>
-                        <li class="nav-page__item"><a href="./portfolio.html" class="nav-page__link nav-page__link--current">Портфоліо</a></li>
+                        <li class="nav-page__item"><a href="./index.html" class="nav-page__link">Студія</a></li>
+                        <li class="nav-page__item"><a href="./portfolio.html"
+                                class="nav-page__link nav-page__link--current">Портфоліо</a></li>
                         <li class="nav-page__item"><a href="" class="nav-page__link">Контакти</a></li>
                     </ul>
                 </nav>
@@ -39,16 +39,19 @@
                         +38 096 111 11 11</a>
                 </div>
             </div>
-            <button type="button" class="btn-menu" data-mobail-open>
+            <button type="button" class="btn-menu js-open-menu" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu">
                 <svg width="24" height="16">
                     <use href="./images/svg.sprite.svg#icon-menu"></use>
                 </svg>
             </button>
-            <div class="mobail-menu" data-mobail>
+            <div class="mobail-menu js-menu-container"
+                    id="mobile-menu">
                 <ul class="mobail-menu__list list">
-                    <li class="mobail-menu__item"><a href="./index.html"
-                            class="mobail-menu__link">Студія</a></li>
-                    <li class="mobail-menu__item"><a href="./portfolio.html" class="mobail-menu__link mobail-menu__link--current">Портфоліо</a>
+                    <li class="mobail-menu__item"><a href="./index.html" class="mobail-menu__link">Студія</a></li>
+                    <li class="mobail-menu__item"><a href="./portfolio.html"
+                            class="mobail-menu__link mobail-menu__link--current">Портфоліо</a>
                     </li>
                     <li class="mobail-menu__item"><a href="" class="mobail-menu__link">Контакти</a></li>
                 </ul>
@@ -67,157 +70,157 @@
                         <li class="mobail-sotial__item"><a href="" class="mobail-sotial__link">Facebooc</a></li>
                         <li class="mobail-sotial__item"><a href="" class="mobail-sotial__link">LincedIn</a></li>
                     </ul>
-                    <button class="mobail-menu__close" data-mobail-close>
+                    <button class="mobail-menu__close js-close-menu">
                         <svg width="18" height="18">
                             <use href="./images/svg.sprite.svg#icon-close"></use>
                         </svg>
                     </button>
+                </div>
             </div>
-        </div>
     </header>
     <main>
         <section class="section exsemples">
             <div class="container">
                 <h1 class="visually-hidden">Приклади робіт</h1>
-            <!-- Фільтр Портфоліо -->
-            <ul class="filter list">
-                <li class="filter__item"><button type="button" class="filter__button">Усі</button></li>
-                <li class="filter__item"><button type="button" class="filter__button">Веб-сайти</button></li>
-                <li class="filter__item"><button type="button" class="filter__button">Додатки</button></li>
-                <li class="filter__item"><button type="button" class="filter__button">Дизайн</button></li>
-                <li class="filter__item"><button type="button" class="filter__button">Маркетинг</button></li>
-            </ul>
-            <!-- Приклади робіт -->
-            <ul class="card-set list">
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img1.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img2.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img3.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img4.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img5.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img6.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img7.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img8.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-set__item">
-                    <a href="" class="card-set__link">
-                        <div class="thumb-imeges">
-                            <img src="./images/img9.jpg" alt="Веб-сайти" width="370" class="card-set__img">
-                            <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
-                                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="card-set__wraper-text">
-                            <h2 class="card-set__titel">Технокряк</h2>
-                            <p class="card-set__text">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                <!-- Фільтр Портфоліо -->
+                <ul class="filter list">
+                    <li class="filter__item"><button type="button" class="filter__button">Усі</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Веб-сайти</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Додатки</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Дизайн</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Маркетинг</button></li>
+                </ul>
+                <!-- Приклади робіт -->
+                <ul class="card-set list">
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img1.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img2.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img3.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img4.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img5.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img6.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img7.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img8.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="thumb-imeges">
+                                <img src="./images/img9.jpg" alt="Веб-сайти" width="370" class="card-set__img">
+                                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.</p>
+                            </div>
+                            <div class="card-set__wraper-text">
+                                <h2 class="card-set__titel">Технокряк</h2>
+                                <p class="card-set__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-    </section>
+        </section>
     </main>
     <footer class="footer">
         <div class="container footer-content">
@@ -277,7 +280,13 @@
             </form>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+    <script src="./js/mobail-menu.js"></script>
 </body>
 
 </html>

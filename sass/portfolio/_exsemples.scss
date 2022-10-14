@@ -1,11 +1,7 @@
 .card-set {
-  display: flex;
 
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
-  }
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }

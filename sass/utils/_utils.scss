@@ -12,10 +12,13 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  &.modal-open, &.mobail-open {
+    overflow: hidden;
+  }
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .visually-hidden {
