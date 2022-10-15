@@ -10,6 +10,9 @@
   overflow-y: scroll;
 
   background-color: $bg-backdrop;
+  @media screen and (max-width: 480px) {
+    padding: 15px;
+  }
 
   &.is-hidden {
     opacity: 0;
@@ -17,9 +20,6 @@
     .modal {
       transform: scale(0.8);
       @media screen and (min-width: 480px) {
-        transform: translateX(-50%);
-      }
-      @media screen and (min-width: 1200px) {
         transform: translate(-50%, -50%);
       }
     }
@@ -39,23 +39,17 @@
 
   @media screen and (min-width: 480px) {
     position: absolute;
-    top: 93px;
+    top: 50%;
     left: 50%;
     width: 450px;
     height: 609px;
 
-    transform: translateX(-50%);
-    transition: scale 250ms $cubic, translateX 250ms $cubic;
-  }
-  @media screen and (min-width: 768px) {
-    top: 210px
-  }
-  @media screen and (min-width: 1200px) {
-    top: 50%;
-    width: 528px;
-    height: 581px;
     transform: translate(-50%, -50%);
     transition: scale 250ms $cubic, translate 250ms $cubic;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
   }
 }
 .cloce-modal {

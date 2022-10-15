@@ -1012,6 +1012,11 @@ img {
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding: 15px;
+  }
+}
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1021,12 +1026,6 @@ img {
           transform: scale(0.8);
 }
 @media screen and (min-width: 480px) {
-  .backdrop.is-hidden .modal {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-@media screen and (min-width: 1200px) {
   .backdrop.is-hidden .modal {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1049,30 +1048,20 @@ img {
 @media screen and (min-width: 480px) {
   .modal {
     position: absolute;
-    top: 93px;
+    top: 50%;
     left: 50%;
     width: 450px;
     height: 609px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    -webkit-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), translateX 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), translateX 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    top: 210px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    top: 50%;
-    width: 528px;
-    height: 581px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -webkit-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
